@@ -1,1 +1,10 @@
-teste
+version: "3.7"
+
+services:
+  app:
+    image: tscampos/conversao-distancia:v2
+    build:
+      dockerfile: dockerfile
+      context: ./
+    ports:
+    - 8080:8080
